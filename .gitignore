@@ -1,0 +1,75 @@
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === Python ===
+# Virtual environments
+venv/
+server/venv/
+env/
+/.venv
+
+# Byte-compiled / cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+
+# Pytest
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# === Node / frontend ===
+client/node_modules/
+client/dist/
+client/build/
+client/.vite/
+client/.env
+
+# Lockfiles (keep if you want to commit them)
+# package-lock.json
+
+# === Database / generated data ===
+# Ignore local sqlite DB files (allow keeping schema if committed intentionally)
+server/database/*.db
+server/database/*.sqlite
+server/database/*.sqlite3
+
+# === Large model / artifact files ===
+# If you do want to keep model files in git, remove these lines. Otherwise keep them ignored.
+*.pt
+*.h5
+*.ckpt
+*.pb
+
+# === Logs ===
+*.log
+logs/
+
+# === IDEs / editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === OS / Misc ===
+Thumbs.db
+.DS_Store
+
+# === Security / env ===
+.env
+.env.*
+secrets.env
+credentials.json
+
